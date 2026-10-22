@@ -1,8 +1,8 @@
 # Convite de 15 anos da Driellen
 
-Versão preparada para publicação na Vercel usando Vite. A arte original fica em `public/convite.png` e é servida sem alterações.
+Site responsivo do convite de 15 anos, com uma introdução animada inspirada na abertura de uma carta antiga, arte original preservada, link do local no Google Maps e confirmação de presença pelo WhatsApp.
 
-## Estrutura necessária
+## Estrutura
 
 ```text
 convite-driellen/
@@ -16,25 +16,25 @@ convite-driellen/
 
 ## Testar no computador
 
-Instale o Node.js 22 e, dentro desta pasta, execute:
+Use Node.js 22. Dentro desta pasta, execute:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Para testar o build de produção:
+Para testar a versão de produção:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-O build deve criar a pasta `dist/`.
+O build gera a pasta `dist/`.
 
 ## Publicar na Vercel
 
-Envie todos os arquivos desta pasta para a raiz do repositório GitHub. No painel da Vercel, verifique:
+Envie todos os arquivos desta pasta para a raiz do repositório GitHub. Na Vercel, confirme:
 
 - **Root Directory:** a pasta que contém `package.json` (normalmente `.` / raiz do repositório).
 - **Framework Preset:** Vite.
@@ -42,10 +42,16 @@ Envie todos os arquivos desta pasta para a raiz do repositório GitHub. No paine
 - **Build Command:** `npm run build`.
 - **Output Directory:** `dist`.
 
-O arquivo `vercel.json` já define os comandos de instalação, build e a pasta de saída. Caso o painel da Vercel esteja com opções sobrescritas, use os mesmos valores acima ou remova as sobrescritas para que a configuração do projeto seja aplicada.
+O `vercel.json` define o comando de instalação, build e pasta de saída. Se o painel da Vercel tiver configurações manuais diferentes, atualize-as ou remova as sobrescritas.
 
-Se o repositório antigo tiver um `vite.config.js`, `vite.config.ts` ou configurações React antigas que importem plugins que não estão neste projeto, remova esses arquivos antigos ao substituir o site pelo projeto deste pacote. Eles não são necessários para este convite estático.
+## Link do local
 
-## WhatsApp
+A área sobre “Click e confira o local” abre o Google Maps para:
 
-O botão de confirmação abre o WhatsApp para `+55 14 99144-0905` com a mensagem `Eu confirmo a minha presença para o seu aniversário!!!`.
+`R. Célso Félix Moreno Farsoni, 12 - Q.ta Bela Olinda, Bauru - SP, 17023-750`
+
+## Confirmação de presença
+
+O botão do convite abre o WhatsApp para `+55 14 99144-0905` com a mensagem:
+
+`Eu confirmo a minha presença para o seu aniversário!!!`
